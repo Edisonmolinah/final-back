@@ -6,13 +6,20 @@
 
 ### Back de la app para crear post con categorias en Vue
 
-configuracion de conexion a base de datos
+configuracion de conexion a base de datos, es importante configurar estos parametros y crear una base de datos con la informacion aqui mencionada.
+
 - DB_CONNECTION=mysql
 - DB_HOST=127.0.0.1
 - DB_PORT=3306
+- DB_DATABASE=post
 
 ## se deben lanzar las migraciones : 
 - php artisan migrate
+
+## crear en la base de datos los siguientes roles:
+
+- insert into post.roles(id, name) values (1, 'ADMIN');
+- insert into post.roles(id, name) values (2, 'VIEWER');
 
 ## se debe correr el proyecto : 
 - php artisan serve 
