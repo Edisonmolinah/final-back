@@ -26,7 +26,7 @@ configuracion de conexion a base de datos
 
 ## Las rutas para hacer uso del app Laravel :
 
-Los metodos crud tienen la restriccion para que se puedan utilizar solo si se tiene el permiso del token, asi que primero debe registrarse como 1 para admin, 2 para viwer.
+Los metodos crud tienen la restriccion para que se puedan utilizar solo si se tiene el permiso del token, asi que primero debe registrarse como 1 para admin, 2 para viwer y luego loguearse el usuario creado.
 
 ### registro y login de usuarios
 - post : 127.0.0.1:8000/api/register
