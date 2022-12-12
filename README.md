@@ -17,7 +17,23 @@ configuracion de conexion a base de datos
 ## se debe correr el proyecto : 
 - php artisan serve 
 
+### Descripcion:
+
+- Se realizo la creacion y validacion de token que se obtiene al registrarse y posteriormente cuando se inicia sesion para poder validar las funcionalidades y pemrisos, y se crearon las migraciones necesarias
+
+
+
+
 ## Las rutas para hacer uso del app Laravel :
+
+Los metodos crud tienen la restriccion para que se puedan utilizar solo si se tiene el permiso del token, asi que primero debe registrarse como 1 para admin, 2 para viwer.
+
+### registro y login de usuarios
+- post : 127.0.0.1:8000/api/register
+
+- post : 127.0.0.1:8000/api/login
+
+### CRUD para caterorias
 
 - get : 127.0.0.1:8000/api/category/all
 
@@ -28,6 +44,8 @@ configuracion de conexion a base de datos
 - put : 127.0.0.1:8000/api/category/{id}/update
 
 - delete : 127.0.0.1:8000/api/category/{id}/destroy
+
+### CRUD para Posts
 
 - get : 127.0.0.1:8000/api/post/all
 
@@ -42,8 +60,7 @@ configuracion de conexion a base de datos
 
 ### Para consumir esta api desde una api web en vue descargar el repo URL del front: 
 
-- https://github.com/Edisonmolinah/post-vue
-
+- https://github.com/Edisonmolinah/final-front
 
 
 
